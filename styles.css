@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+main{
+    font-family: 'Kumbh Sans', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 200px;
+    background-image: linear-gradient(#B068E9,#6463E7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+card{
+    width: 90%;
+    max-width: 810px;
+    padding: 0px 25px;
+    border-radius: 20px;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.images{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+.pattern{
+    display: none;
+}
+.shadow{  
+    top: 0px;
+    width: 100%;
+    max-width: 300px;
+}
+.woman{
+    position: absolute;
+    top: calc(-105%);
+    width: 100%;
+    max-width: 300px; 
+}
+.box{
+    display: none;
+}
+.text{
+    width: 100%;
+}
+h1{
+    margin-top: 20px;
+    font-size: 32px; 
+}
+li{
+    margin-top: 30px;
+    font-size: 13px;
+    list-style-type: none;
+}
+ul{
+    margin-top: 10px;
+    text-align: left;  
+}
+.ul-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color: #4B4C5F;
+}
+.hidden{
+    color: #787887;
+    display: none;
+}
+hr{
+    margin-top: 15px;
+    height: 1px;
+    border: none;
+    background-color: #E8E8EA;
+}
+
+
+
+
+@media only screen and (min-width: 900px){
+    main{
+        padding-top: 0px;
+    }
+    card{
+        flex-direction: row;
+        gap: 100px;
+        padding: 40px 50px 0px 50px;
+        overflow: hidden;
+        height: 440px;
+    }
+    .pattern{
+        display: initial;
+        position: absolute;
+        top: -420px;
+        left: -455px;
+        width: 740px;
+    }
+    .shadow{
+        display: none;
+    }
+    .woman{
+        top: -160px;
+        left: -125px;
+        width: 410px;
+        max-width: 900px;
+    }
+    .box{
+        display: initial;
+        position: relative;
+        width: 166px;
+        left: -403px;
+        top: 355px;
+    }
+    .text{
+        text-align: left;
+    }
+    
+}
+
